@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+/* General Reset and Body Styling */
+body {
+    /* Background gradient for the main page */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container to center the form */
+.container {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for the form */
+}
+
+/* Styling for the form card */
+.registration-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners for the card */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Form Heading */
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Styling for each input/label group */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Input Field Styling */
+.input-group input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #2575fc; /* Highlight border on focus */
+    outline: none;
+}
+
+/* Placeholder text color */
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+/* Register Button Styling */
+.register-btn {
+    width: 100%;
+    background-color: #2575fc; /* A bright, solid blue */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.register-btn:hover {
+    background-color: #1a5bce; /* Slightly darker blue on hover */
+    transform: translateY(-1px); /* Slight lift effect */
+}
+
+</style>
+<body>
+    <div class="container">
+        <form class="registration-form">
+            <h2>Registration Form</h2>
+
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Re-enter password" required>
+            </div>
+
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+</body>
+  </html>
+  
